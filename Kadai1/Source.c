@@ -1,4 +1,4 @@
-#include<stdio.h>
+ï»¿#include<stdio.h>
 
 int main() {
 	float var;
@@ -10,7 +10,7 @@ int main() {
 		for (j = 0; j < n; j++) {
 			var += 0.1;
 		}
-		printf("%d‰ñ0.1‚ð‰ÁŽZF%g\n", n, var);
+		printf("%då›ž0.1ã‚’åŠ ç®—ï¼š%g\n", n, var);
 		n *= 10;
 	}
 	return 0;
