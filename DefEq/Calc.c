@@ -7,7 +7,7 @@
 #if WAY == EULER
 void Calc(double* x, double* y) {
 	//オイラー法による計算
-	for (int n = 0; n < DIV; n++) {
+	for (int n = 0; n < N; n++) {
 		double h = x[n + 1] - x[n];
 
 		double k1 = F(x[n], y[n]);
@@ -19,7 +19,7 @@ void Calc(double* x, double* y) {
 #if WAY == RK4
 void Calc(double* x, double* y) {
 	//4次ルンゲクッタ法による計算
-	for (int n = 0; n < DIV; n++) {
+	for (int n = 0; n < N; n++) {
 		double h = x[n + 1] - x[n];
 
 		double k1 = F(x[n], y[n]);
@@ -31,8 +31,8 @@ void Calc(double* x, double* y) {
 }
 #endif
 int main() {
-	double x[DIV + 1];
-	double y[DIV + 1];
+	double x[N + 1];
+	double y[N + 1];
 
 	Init(x, y);
 	Calc(x, y);
