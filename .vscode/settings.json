@@ -1,0 +1,23 @@
+{
+    "latex-workshop.latex.tools": [
+        {
+            "name": "platex",
+            "command": "ptex2pdf",
+            "args": [
+                "-l",
+                "-ot",
+                "-kanji=utf8 -synctex=1",
+                "%DOC%"
+            ]
+        }
+    ],
+    "latex-workshop.chktex.enabled": true,
+    "latex-workshop.latex.recipes": [
+        {
+          "name": "platex",
+          "tools": [
+            "platex"
+          ]
+        },
+      ],
+}
